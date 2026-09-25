@@ -105,7 +105,7 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=...
 - [x] โครงโปรเจกต์ Next.js App Router (JavaScript)
 - [x] เชื่อมต่อ Supabase client (`lib/supabaseClient.js`)
 - [x] หน้าแรก `/` แสดงชื่อร้านและลิงก์ทดสอบ
-- [x] หน้า placeholder `/generate-qr` และ `/kitchen` (กัน 404 ตอนทดสอบ deploy)
-- [ ] หน้าสร้าง QR Code จริง (ขั้นตอนถัดไป)
-- [ ] หน้าสั่งอาหารสำหรับลูกค้า (Dynamic Route ตามโต๊ะ — **ต้องใช้ `use()` unwrap params ตามหัวข้อด้านบน**)
+- [x] หน้า placeholder `/kitchen` (กัน 404 ตอนทดสอบ deploy)
+- [x] หน้าเปิดโต๊ะ + สร้าง QR Code จริง (`/generate-qr`) — เช็ค session ค้าง, ปิดโต๊ะเดิม, แสดง QR
+- [x] หน้าสั่งอาหารสำหรับลูกค้า `/order/[tableNumber]` — unwrap `params` ด้วย `use()` ตามหัวข้อด้านบนแล้ว, เช็ค session เปิด, แท็บหมวดหมู่, ตะกร้า, ส่งออเดอร์, ปุ่มเรียกเก็บเงิน
 - [ ] หน้าครัวสำหรับดูออเดอร์แบบ real-time (ขั้นตอนถัดไป)
